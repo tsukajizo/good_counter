@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>Scocket Counter</title>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./js/counter.js"> </script>
+  </head>
+  <body>
+    <form id="auth" action="" method="post">
+      <input id="input_user" type="text" name="name" value="username"></input>
+      <input id="input_pass" type="text" name="name" value="pass"></input>
+    </form>
+    <button type="button" name="button" onclick="requestAuth();">認証</button>
+    <button type="button" name="button" onclick="reset();">リセット</button>
+    <div id="msg"><div id="num"></div><div id="iine">いいね</div>
+
+    </div>
+    <script type="text/javascript">
+      setAdmin();
+      start();
+    </script>
+  </body>
+</html>
