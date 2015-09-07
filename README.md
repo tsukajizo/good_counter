@@ -1,1 +1,3 @@
-# good_counter
+# sync counter
+
+複数の端末からリアルタイムでカウントを行うためのプログラム。
